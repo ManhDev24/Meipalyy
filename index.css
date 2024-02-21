@@ -1,0 +1,96 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+/* Start header */
+header {
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+header span * {
+    text-decoration: none;
+    color: white;
+}
+
+header .container nav * {
+    text-decoration: none;
+    margin-left: 30px;
+    color: white;
+    font-weight: 500;
+    transition: 0.6s;
+}
+header nav a:hover {
+    color: red;
+    transition: 0.6s;
+}
+header nav .active{
+    color: red;
+}
+header .logo {
+    font-weight: 500;
+    font-size: 26px;
+}
+
+/* Start banner */
+.banner {
+    padding-top: 80px;
+    background-image: url(./img/home_slider.jpg);
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.banner h2 {
+    font-size: 50px;
+    font-weight: 800;
+}
+.banner * {
+    margin-top: 20px;
+    color: white;
+}
+.banner button {
+    padding: 15px 25px;
+    background-color: #e62b4a;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.banner button:hover {
+    background-color: #b80e2b;
+    transition: 0.3s;
+}
+.banner i {
+    font-size: 50px;
+    animation: animate-arrow 1s infinite;
+}
+
+@keyframes animate-arrow {
+    from {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(15px);
+        opacity: 0;
+    }
+}
