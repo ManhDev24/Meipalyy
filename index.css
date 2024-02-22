@@ -41,7 +41,7 @@ header nav a:hover {
     color: red;
     transition: 0.6s;
 }
-header nav .active{
+header nav .active {
     color: red;
 }
 header .logo {
@@ -95,7 +95,30 @@ header .logo {
     }
 }
 /* Start carousel */
-
-.carousel__title{
+.carousel {
+    background: black;
+    padding: 80px 0;
     text-align: center;
+    color: white;
+}
+.carousel__List * {
+    margin-bottom: 20px;
+}
+
+.carousel__title h2 {
+    font-size: 40px;
+}
+.carousel__item .item__container {
+    background: white;
+    height: 200px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.carousel__item {
+    padding: 0px 20px;
 }

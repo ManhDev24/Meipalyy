@@ -17,6 +17,9 @@
     />
     <!-- css -->
     <link rel="stylesheet" href="./index.css" />
+    <!-- Slickjs -->
+    <link rel="stylesheet" href="./slick-1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="./slick-1.8.1/slick/slick-theme.css" />
   </head>
   <body>
     <header>
@@ -55,8 +58,98 @@
             while offering our employees the best training.
           </p>
         </div>
-        <div class="carousel__list"></div>
+        <div class="carousel__list">
+          <div class="carousel__item">
+            <div class="item__container">
+              <i class="fa fa-dice-d6"></i>
+              <h3>Digital Maketing</h3>
+            </div>
+          </div>
+          <div class="carousel__item">
+            <div class="item__container">
+              <i class="fa fa-dice-d6"></i>
+              <h3>Digital Maketing</h3>
+            </div>
+          </div>
+          <div class="carousel__item">
+            <div class="item__container">
+              <i class="fa fa-dice-d6"></i>
+              <h3>Digital Maketing</h3>
+            </div>
+          </div>
+          <div class="carousel__item">
+            <div class="item__container">
+              <i class="fa fa-dice-d6"></i>
+              <h3>Digital Maketing</h3>
+            </div>
+          </div>
+          <div class="carousel__item">
+            <div class="item__container">
+              <i class="fa fa-dice-d6"></i>
+              <h3>Digital Maketing</h3>
+            </div>
+          </div>
+          <div class="carousel__item">
+            <div class="item__container">
+              <i class="fa fa-dice-d6"></i>
+              <h3>Digital Maketing</h3>
+            </div>
+          </div>
+          <div class="carousel__item">
+            <div class="item__container">
+              <i class="fa fa-dice-d6"></i>
+              <h3>Digital Maketing</h3>
+            </div>
+          </div>
+          <div class="carousel__item">
+            <div class="item__container">
+              <i class="fa fa-dice-d6"></i>
+              <h3>Digital Maketing</h3>
+            </div>
+          </div>
+          <div class="carousel__item">
+            <div class="item__container">
+              <i class="fa fa-dice-d6"></i>
+              <h3>Digital Maketing</h3>
+            </div>
+          </div>
+          <div class="carousel__item">
+            <div class="item__container">
+              <i class="fa fa-dice-d6"></i>
+              <h3>Digital Maketing</h3>
+            </div>
+          </div>
+          <div class="carousel__item">
+            <div class="item__container">
+              <i class="fa fa-dice-d6"></i>
+              <h3>Digital Maketing</h3>
+            </div>
+          </div>
+
+          
+        </div>
       </div>
     </section>
+    <!-- Jqery -->
+    <script
+      src="https://code.jquery.com/jquery-1.12.4.min.js"
+      integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+      crossorigin="anonymous"
+    ></script>
+    <!-- Slickjs -->
+    <script src="./slick-1.8.1/slick/slick.min.js"></script>
+    <!-- Cofig -->
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".carousel__list").slick({
+          // setting-name: setting-value
+          infinite: true,
+          slidesToShow: 5,
+          slidesToScroll: 1,
+          arrows: false,
+          dots: true,
+        });
+      });
+    </script>
   </body>
 </html>
