@@ -94,3 +94,8 @@ header .logo {
         opacity: 0;
     }
 }
+/* Start carousel */
+
+.carousel__title{
+    text-align: center;
+}
