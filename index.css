@@ -108,6 +108,9 @@ header .logo {
 .carousel__title h2 {
     font-size: 40px;
 }
+.carousel__title *{
+    margin-bottom: 20px;
+}
 .carousel__item .item__container {
     background: white;
     height: 200px;
@@ -116,9 +119,24 @@ header .logo {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
 }
 
 .carousel__item {
     padding: 0px 20px;
+}
+.carousel__item .item__container *{
+    margin-bottom: 10px;
+    color: grey;
+}
+.carousel__item .item__container i {
+    font-size: 40px;
+}
+.slick-dots li button:before{
+    opacity: 1 !important;
+    color: white !important;
+    top:10px !important;
+    font-size: 14px !important;
+}
+.slick-dots li.slick-active button:before{
+    color: red !important;
 }
