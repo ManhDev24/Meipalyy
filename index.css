@@ -140,3 +140,22 @@ header .logo {
 .slick-dots li.slick-active button:before{
     color: red !important;
 }
+
+/* start blog */
+
+.blog{
+    padding: 100px 0;
+    background: white;
+    text-align: center;
+}
+
+.blog__title *{
+    margin-bottom: 20px;
+}
+.blog__title p , h4{
+    color: grey;
+}
+.blog__title h2{
+    font-weight: 400;
+    font-size: 50px;
+}
