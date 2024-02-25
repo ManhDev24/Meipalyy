@@ -108,7 +108,7 @@ header .logo {
 .carousel__title h2 {
     font-size: 40px;
 }
-.carousel__title *{
+.carousel__title * {
     margin-bottom: 20px;
 }
 .carousel__item .item__container {
@@ -119,43 +119,130 @@ header .logo {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .carousel__item {
     padding: 0px 20px;
 }
-.carousel__item .item__container *{
+.carousel__item .item__container * {
     margin-bottom: 10px;
     color: grey;
 }
 .carousel__item .item__container i {
     font-size: 40px;
 }
-.slick-dots li button:before{
+.carousel__item .item__container::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 5px;
+    background-color: #e62b4a;
+    top: -300px;
+    right: 0;
+    /* transform: translateY(-100%); */
+    transition: 0.5s;
+}
+.carousel__item:hover .item__container::after {
+    /* transform: translateY(0%); */
+    top: 0;
+}
+.slick-dots li button:before {
     opacity: 1 !important;
     color: white !important;
-    top:10px !important;
+    top: 10px !important;
     font-size: 14px !important;
 }
-.slick-dots li.slick-active button:before{
+.slick-dots li.slick-active button:before {
     color: red !important;
 }
 
 /* start blog */
 
-.blog{
+.blog {
     padding: 100px 0;
     background: white;
     text-align: center;
 }
 
-.blog__title *{
+.blog__title * {
     margin-bottom: 20px;
 }
-.blog__title p , h4{
+.blog__title p,
+h4 {
     color: grey;
 }
-.blog__title h2{
+.blog__title h2 {
     font-weight: 400;
     font-size: 50px;
+}
+.blog__item img {
+    width: 100%;
+    height: 100%;
+}
+.blog__content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+.blog__item.blog__item1 {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+}
+.blog__item.blog__item10 {
+    grid-column: 3 / 5;
+    grid-row: 3 / 5;
+}
+.blog__item {
+    position: relative;
+    overflow: hidden;
+}
+.blog__overlay {
+    background-color: rgba(230, 43, 74, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 25px;
+    opacity: 0;
+    transition: all 0.5s;
+}
+.blog__icon {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+}
+.blog__icon i {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    background-color: #ffffff;
+    font-size: 14px;
+    color: #000;
+    margin-bottom: 10px;
+    transform: translateY(20px);
+    transition: all 0.8s;
+}
+.blog__item:hover i {
+    transform: translateY(0);
+}
+.blog__text {
+    position: absolute;
+    left: 25px;
+    bottom: 25px;
+    transition: all 0.8s;
+    transform: translateY(20px);
+    color: white
+}
+.blog__item:hover .blog__text{
+    transform: translateY(0);
+}
+.blog__icon i:hover {
+    background-color: #000;
+    color: #ffffff;
+}
+.blog__item:hover .blog__overlay {
+    opacity: 1;
 }
